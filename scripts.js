@@ -1,22 +1,11 @@
-document.addEventListener("DOMContentLoaded", function() {
-    Promise.all([
-        fetch("footer.html").then(response => response.text()),
-        
-    ]).then(([footerData, headerData]) => {
-        document.getElementById("footer-placeholder").innerHTML = footerData;
-    
-    }).then(() => {
-     
-        const form = document.querySelector('form');
-        if (form) {
-            form.addEventListener('submit', (event) => {
-                event.preventDefault();
-                alert('Form submitted!');
-            });
-        }
-
-
-    }).catch(error => {
-        console.error('Error loading footer or header:', error); // Update error message
-    });
+document.addEventListener("DOMContentLoaded", function () {
+    fetch("footer.html")
+        .then(response => response.text())
+        .then(footerData => {
+            // Insert the footer
+            document.getElementById("footer-placeholder").innerHTML = footerData;
+        })
+        .catch(error => {
+            console.error('Erreur lors du chargement du footer:', error);
+        });
 });

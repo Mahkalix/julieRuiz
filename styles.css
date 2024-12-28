@@ -8,7 +8,7 @@
 
 /* Body Styles */
 body {
-    font-family: 'Arial', 'Helvetica', sans-serif;
+    font-family: 'Work Sans', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -101,17 +101,46 @@ nav {
 }
 
 .subtitle {
+    font-family: 'BodoniModa', serif;
+    z-index: 2;
+    text-transform: uppercase;
+    line-height: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+}
+
+.subtitle-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    margin-top: 160px;
+    gap: 20px;
+
+}
+.subtitle-others{
     z-index: 2;
     text-transform: uppercase;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
-    width: 100%;
-    margin-top: 80px;
-    font-size: 1.2rem;
-}
+    font-size: 0.8rem;
+    font-weight: 300;
 
+}
+.subtitle-others-2{
+    font-family: 'BodoniModa', serif;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 2rem;
+}
 .contact-button {
     font-size: 14px;
     padding: 0.5rem 1rem;
@@ -136,7 +165,7 @@ nav ul li {
 
 /* Main Content Styles */
 main {
-    padding: 1rem;
+    padding: 0rem 5rem 0rem 5rem;
 }
 
 section {
@@ -158,14 +187,31 @@ form {
     align-items: center;
     justify-content: center;
     width: 40%;
-    
     margin: 2rem auto;
     padding: 2rem;
     background-color: var(--primary-color); /* Set form background color to primary color */
-    border-radius: 10px;
+    border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+form .name-fields {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 2.5rem;
+    width: 100%;
+}
+
+form .name-fields input {
+    width: 110%;
+}
+
+form .captcha-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
 
 form label {
     display: flex;
@@ -174,14 +220,14 @@ form label {
     margin-top: 1rem;
     font-size: 1.1rem;
     width: 100%;
-    color: white; /* Ensure the text color is readable */
-}
+    color: white; }
 
 form input, form textarea {
     width: 100%;
     margin-top: 0.5rem;
     padding: 0.75rem;
     font-size: 1rem;
+    border-radius: 5px;
     border: 1px solid var(--secondary-color);
     box-sizing: border-box;
 }
@@ -215,24 +261,24 @@ footer {
     justify-content: center;
     align-items: center;
     background-color: var(--primary-color);
-    color: var(--text-color);
+    color: var(--background-color);
     text-align: center;
     width: 100%;
     height: 80px;
 }
 
 /* Photo Gallery Styles */
-.photo-gallery {
-    display: flex;
-    flex-wrap: wrap;
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
-    justify-content: center;
+    padding: 1rem;
+    width: 100%;
 }
 
-.photo-gallery img {
-    max-width: 100%;
+.gallery img {
+    width: 100%;
     height: auto;
-    border-radius: 5px;
 }
 
 /* Pagination Styles */
@@ -262,7 +308,96 @@ footer {
     border: 1px solid var(--primary-color);
 }
 
+/* About Section Styles */
+#about, #services, #testimonials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2rem 0rem;
+    background-color: var(--background-color);
+    margin-bottom: 2rem;
+}
+
+#about h2, #services h2, #testimonials h2 {
+    display: flex;
+    justify-content: start;
+    text-transform: uppercase;
+    color: var(--secondary-color);
+    width: 100%;
+    margin-bottom: 1rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+#about p {
+    text-align: justify;
+    margin-left: 4rem;
+    font-size: 18px;
+}
+#about .about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-direction: row;
+}
+
+#about img {
+    max-width: 200px;
+    margin-bottom: 1rem;
+}
+
+/* Domains Section Styles */
+.service-content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    gap: 20px;
+
+}
+
+.service {
+    text-align: justify;
+    gap: 10px;
+}
+.service img{
+width: 100%;
+ margin-bottom: 1rem;
+
+}
+.service h3{
+    font-family: 'BodoniModa', serif;
+  margin-bottom: 1rem;
+  font-size: 15px;
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+/* Testimonials Section Styles */
+
+
+#testimonials .testimonial {
+    background-color: var(--background-color);
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
 /* Media Queries */
+@media (max-width: 1200px) {
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 900px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 @media (max-width: 600px) {
     nav ul li {
         display: block;
@@ -271,5 +406,9 @@ footer {
 
     form {
         width: 100%;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr;
     }
 }

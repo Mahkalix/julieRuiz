@@ -12,6 +12,7 @@
             <ul class="menu-left">
                 <li><a href="index.html">Accueil</a></li>
                 <li><a href="services.html">Services</a></li>
+                <li><a href="propos.html">A Propos</a></li>
                 <li><a href="photos.html">Galerie</a></li>
             </ul>
             <div class="menu-center">
@@ -21,18 +22,32 @@
                 <li><a href="contact.html" class="contact-button">Contact</a></li>
             </ul>
         </nav>
-        <p class="subtitle">Contactez-moi</p>
+        <div class="subtitle-container">
+            <p class="subtitle-others">Contactez-moi</p>
+            <p class="subtitle-others-2">Lorem ipsum dolor sit amet</p>
+        </div>
     </header>
     <main>
         <section id="contact">
-   
             <form>
-                <label for="name">Nom:</label>
-                <input type="text" id="name" name="name" required>
-                <label for="email">Email:</label>
+                <div class="name-fields">
+                    <div>
+                        <label for="surname">Prénom</label>
+                        <input type="text" id="surname" name="surname" required>
+                    </div>
+                    <div>
+                        <label for="lastname">Nom</label>
+                        <input type="text" id="lastname" name="lastname" required>
+                    </div>
+                </div>
+                <label for="email">Email</label>
                 <input type="email" id="email" name="email" required>
-                <label for="message">Message:</label>
+                <label for="message">Message</label>
                 <textarea id="message" name="message" required></textarea>
+                <div class="captcha-container">
+                    <!-- Add your captcha widget here -->
+                    <div class="g-recaptcha" data-sitekey="your-site-key"></div>
+                </div>
                 <button type="submit">Envoyer</button>
             </form>
         </section>
