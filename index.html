@@ -17,8 +17,8 @@
         <nav>
             <ul class="menu-left">
                 <li><a href="index.html">Accueil</a></li>
-                <li><a href="services.html">Services</a></li>
                 <li><a href="propos.html">A Propos</a></li>
+                <li><a href="services.html">Services</a></li>
                 <li><a href="photos.html">Galerie</a></li>
             </ul>
             <div class="menu-center">
@@ -28,41 +28,79 @@
                 <li><a href="contact.html" class="contact-button">Contact</a></li>
             </ul>
         </nav>
-        <div class="subtitle-container">
-            <p class="subtitle-others">Bienvenue !</p>
-            <p class="subtitle">Lorem ipsum dolor <br/> Lorem ipsum dolor sit amet</p>
-        </div>
     </header>
-    <main>
+    <hero id="index-hero">
+        <div class="hero-slider">
+            <div class="hero-slide active">
+                <img src="/assets/images/background.jpg" alt="Slide 1">
+                <div class="subtitle-container-home">
+                    <p class="subtitle-others">Bienvenue !</p>
+                    <p class="subtitle">Lorem ipsum dolor <br/> Lorem ipsum dolor sit amet</p>
+                </div>
+            </div>
+            <div class="hero-slide inactive">
+                <img src="/assets/images/2.jpg" alt="Slide 2">
+                <div class="subtitle-container-home">
+                    <p class="subtitle-others">Bienvenue !</p>
+                    <p class="subtitle">Lorem ipsum dolor <br/> Lorem ipsum dolor sit amet</p>
+                </div>
+            </div>
+            <div class="hero-slide inactive">
+                <img src="/assets/images/zoltan-tasi-vHnVtLK8rCc-unsplash.jpg" alt="Slide 3">
+                <div class="subtitle-container-home">
+                    <p class="subtitle-others">Bienvenue !</p>
+                    <p class="subtitle">Lorem ipsum dolor <br/> Lorem ipsum dolor sit amet</p>
+                </div>
+            </div>
+            <a class="hero-prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="hero-next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <div class="hero-dots">
+            <span class="hero-dot" onclick="currentSlide(1)"></span>
+            <span class="hero-dot" onclick="currentSlide(2)"></span>
+            <span class="hero-dot" onclick="currentSlide(3)"></span>
+        </div>
+    </hero>
+    <main style="margin-top: 90vh;">
         <section id="about">
             <h2>À propos de moi</h2>
+            <h3>Découvrez mon histoire</h3>
             <div class="about-content">
                 <img src="/assets/images/default-avatar.jpg" alt="Julie Ruiz">
                 <p>Lorem ipsum dolor sit amet. Id culpa internos a omnis blanditiis qui dolores ullam quo voluptatem assumenda. Qui veniam temporibus qui assumenda culpa hic neque rerum aut nulla deleniti ut error architecto sit voluptas reprehenderit id velit eaque. Non sunt velit sit pariatur earum hic galisum asperiores aut beatae doloremque aut sequi rerum est inventore nihil! Eum ratione consequatur qui voluptatem aspernatur aut accusamus numquam et reiciendis consequuntur. Lorem ipsum dolor sit amet. Id culpa internos a omnis blanditiis qui dolores ullam quo voluptatem assumenda. Qui veniam temporibus qui assumenda culpa hic neque rerum aut nulla deleniti ut error architecto sit voluptas reprehenderit id velit eaque. Non sunt velit sit pariatur earum hic galisum asperiores aut beatae doloremque aut sequi rerum est inventore nihil! Eum ratione consequatur qui voluptatem aspernatur aut accusamus numquam et reiciendis consequuntur.</p>
             </div>
+            <div class="about-button">
+             
+            <button class="button-about" role="button">Qui suis-je?</button>
+        </div>
         </section>
         <section id="services">
             <h2>Mes Services</h2>
+            <h3>Ce que je peux faire pour vous</h3>
             <div class="service-content">
                 <div class="service">
                     <img src="/assets/images/background.jpg" alt="">
-                    <h3>Lorem ipsum dolor</h3>
+                    <h4>Lorem ipsum dolor</h4>
                     <p>Lorem ipsum dolor sit amet. Id culpa internos a omnis blanditiis qui dolores ullam quo voluptatem assumenda. Qui veniam temporibus qui assumenda culpa hic neque rerum aut nulla deleniti ut error architecto sit voluptas reprehenderit id velit eaque. </p>
+                    <button class="button" role="button">En savoir +</button>
                 </div>
                 <div class="service">
                     <img src="/assets/images/background.jpg" alt="">
-                    <h3>Lorem ipsum dolor</h3>
+                    <h4>Lorem ipsum dolor</h4>
                     <p>Lorem ipsum dolor sit amet. Id culpa internos a omnis blanditiis qui dolores ullam quo voluptatem assumenda. Qui veniam temporibus qui assumenda culpa hic neque rerum aut nulla deleniti ut error architecto sit voluptas reprehenderit id velit eaque. </p>
+                    <button class="button" role="button">En savoir +</button>
                 </div>
                 <div class="service">
                     <img src="/assets/images/background.jpg" alt="">
-                    <h3>Lorem ipsum dolor</h3>
+                    <h4>Lorem ipsum dolor</h4>
                     <p>Lorem ipsum dolor sit amet. Id culpa internos a omnis blanditiis qui dolores ullam quo voluptatem assumenda. Qui veniam temporibus qui assumenda culpa hic neque rerum aut nulla deleniti ut error architecto sit voluptas reprehenderit id velit eaque. </p>
+                    <button class="button" role="button">En savoir +</button>
                 </div>
             </div>
         </section>
         <section id="testimonials">
             <h2>Témoignages</h2>
+            <h3>Ce qu'ils pensent de moi</h3>
             <div class="testimonial-content">
                 <!-- Testimonials will be dynamically inserted here -->
             </div>
