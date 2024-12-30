@@ -32,11 +32,12 @@
     </hero>
     <main>
         <section id="contact">
-            <form>
+            <form method="POST" id="contact-form">
+                <input type="hidden" name="access_key" value="3f4ae6e4-3319-4a49-8fd5-d54c59761938">
                 <div class="name-fields">
                     <div>
                         <label for="surname">Prénom</label>
-                        <input type="text" id="surname" name="surname" required>
+                        <input type="text" id="surname" name="name" required>
                     </div>
                     <div>
                         <label for="lastname">Nom</label>
@@ -47,11 +48,10 @@
                 <input type="email" id="email" name="email" required>
                 <label for="message">Message</label>
                 <textarea id="message" name="message" required></textarea>
-                <div class="captcha-container">
-                    <!-- Add your captcha widget here -->
-                    <div class="g-recaptcha" data-sitekey="your-site-key"></div>
-                </div>
+                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                <div id="result" style="margin-bottom: 1rem; margin-top: 1rem;"></div>
                 <button type="submit">Envoyer</button>
+
             </form>
         </section>
     </main>

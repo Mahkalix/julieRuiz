@@ -278,24 +278,24 @@ form {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 40%;
     margin: 2rem auto;
     padding: 2rem;
     background-color: var(--primary-color); 
-    border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: -60px;
+    border-radius: 5px;
 }
 
 form .name-fields {
     display: flex;
     align-items: center;
-    justify-content: start;
-    gap: 2.5rem;
+    justify-content: space-between;
+    gap: 1.5rem;
     width: 100%;
 }
 
 form .name-fields input {
-    width: 110%;
+    width: 100%;
 }
 
 form .captcha-container {
@@ -312,22 +312,24 @@ form label {
     margin-top: 1rem;
     font-size: 1.1rem;
     width: 100%;
-    color: white; }
+    color: var(--background-color); 
+}
 
 form input, form textarea {
     width: 100%;
     margin-top: 0.5rem;
     padding: 0.75rem;
     font-size: 1rem;
-    border-radius: 5px;
-    border: 1px solid var(--secondary-color);
+    border: 1px solid var(--background-color);
     box-sizing: border-box;
+    color: var(--background-color);
+    background-color: transparent;
 }
 
 form input:focus, form textarea:focus {
     outline: none;
     border-color: var(--background-color);
-    box-shadow: 0 0 5px rgba(242, 239, 234, 0.5);
+    box-shadow: 0 0 5px rgba(242, 239, 234, 0.295);
 }
 
 form button {
@@ -344,7 +346,7 @@ form button {
 
 form button:hover {
     background-color: var(--background-color);
-    color: var (--text-color);
+    color: var(--text-color);
 }
 
 /* Footer Styles */
@@ -523,7 +525,7 @@ footer {
     margin-bottom: 2rem;
 }
 
-#about h2, #services h2, #testimonials h2 {
+#about h2, #services h2, #testimonials h2, #home-services h2 {
     display: flex;
     justify-content: center;
     text-transform: uppercase;
@@ -533,7 +535,7 @@ footer {
     font-size: 0.8rem;
     font-weight: 500;
 }
-#about h3, #services h3, #testimonials h3, #timeline h3, #about-page h3{ 
+#about h3, #services h3, #testimonials h3, #timeline h3, #about-page h3, #home-services h3 { 
     display: flex;
     justify-content: center;
     color: var(--text-color);
@@ -560,7 +562,7 @@ footer {
 }
 
 /* Domains Section Styles */
-#services {
+#services{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -571,29 +573,63 @@ footer {
 }
 .service-content{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     margin-bottom: 2rem;
     gap: 20px;
 }
 
 .service {
+    display: flex;
     text-align: justify;
     gap: 10px;
+}
+.service .picture {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-bottom: 2rem;
+    margin-right: 2rem;
+   
+}
+.service .picture .prix{
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 1rem;
+
+}
+
+.service .content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-top: 2rem;
 }
 .service img{
 width: 400px;
 height: 250px;
- margin-bottom: 1rem;
 
 }
+
 .service h4{
     font-family: 'BodoniModa', serif;
   margin-bottom: 1rem;
   font-size: 15px;
     color: var(--primary-color);
     font-weight: 500;
+}
+
+#home-services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2rem 0rem;
+    background-color: var(--background-color);
+    margin-bottom: 2rem;
 }
 
 .home-service-content{
