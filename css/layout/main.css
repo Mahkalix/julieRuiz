@@ -1,0 +1,50 @@
+main {
+    padding: 0rem 5rem 0rem 5rem;
+    margin-top: 50vh;
+}
+
+.container-price {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    flex-wrap: nowrap;
+    gap: 10px;
+    width: 100%;
+}
+
+.price {
+    font-size: 13px;
+    text-align: center;
+    width: 100%;
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.text-price {
+    font-size: 13px;
+    text-align: center;
+    font-family: "BodoniModa", serif;
+}
+
+/* Media Queries for Main Content */
+@media (max-width: 1200px) {
+    main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0;
+    }
+}
+
+@media (max-width: 900px) {
+    .container-price {
+        flex-direction: column;
+    }
+    .price {
+        width: 100%;
+    }
+}

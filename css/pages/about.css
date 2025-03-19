@@ -1,0 +1,128 @@
+.main-about {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#about-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px 50px 20px 100px;
+    width: 100%;
+    height: 100%;
+}
+
+#about-page .about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#about-page h2 {
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    color: var(--secondary-color);
+    width: 100%;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+#about, #services, #testimonials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2rem 0rem;
+    background-color: var(--background-color);
+    margin-bottom: 2rem;
+}
+
+#about h2, #services h2, #testimonials h2, #home-services h2 {
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    color: var(--secondary-color);
+    width: 100%;
+    margin-bottom: 1rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+#about h3, #services h3, #testimonials h3, #timeline h3, #about-page h3, #home-services h3 { 
+    display: flex;
+    justify-content: center;
+    color: var(--text-color);
+    width: 100%;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+#about p, #about-page p {
+    text-align: justify;
+    margin-left: 4rem;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+#about .about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-direction: row;
+}
+
+#about img, #about-page img {
+    max-width: 300px;
+    margin-bottom: 1rem;
+}
+
+.about-text{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: left;
+    margin-left: 0rem;
+}
+.about-text-container{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    margin-left: 0rem;
+}
+.about-text p{
+    margin-left: 0rem!important;
+
+}
+.about-text li{
+    list-style-type: circle;
+}
+.about-text h3{
+ text-decoration: underline;
+ font-weight: 500;
+ font-size: 10px;
+
+}
+
+/* Media Queries for About */
+@media (max-width: 1200px) {
+    #about .about-content {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 900px) {
+    #about .about-content {
+        flex-direction: column;
+    }
+    #about p {
+        margin-left: 0px;
+    }
+}

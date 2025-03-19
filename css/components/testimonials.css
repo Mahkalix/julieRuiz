@@ -1,0 +1,67 @@
+#testimonials .testimonial {
+    background-color: var(--background-color);
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#timeline {
+    padding: 2rem 0;
+    background-color: var(--background-color);
+}
+
+#timeline h2 {
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    color: var(--secondary-color);
+    width: 100%;
+    margin-bottom: 1rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.timeline-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.timeline-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    width: 80%;
+}
+
+.timeline-point {
+    width: 20px;
+    height: 20px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.timeline-content {
+    margin-left: 1rem;
+    padding: 1rem;
+    background-color: var(--background-color);
+    border: 1px solid var(--primary-color);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.timeline-content h4 {
+    color: var(--text-color);
+    width: 100%;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.timeline-content p {
+    margin: 0.5rem 0 0;
+    font-size: 1rem;
+    color: var(--text-color);
+}
