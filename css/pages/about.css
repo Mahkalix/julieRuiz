@@ -10,7 +10,7 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 20px 50px 20px 100px;
+    padding: 20px 50px 20px 50px;
     width: 100%;
     height: 100%;
 }
@@ -80,6 +80,7 @@
 #about img, #about-page img {
     max-width: 300px;
     margin-bottom: 1rem;
+    width: 100%;
 }
 
 .about-text{
@@ -111,7 +112,6 @@
 
 }
 
-/* Media Queries for About */
 @media (max-width: 1024px) {
     #about .about-content {
         flex-direction: column;
@@ -130,6 +130,27 @@
 @media (max-width: 768px) {
     #about .about-content {
         flex-direction: column;
+    }
+    #about-page {
+  
+        padding: 20px 50px 20px 50px;
+   
+    }
+
+}
+
+@media (max-width: 420px) {
+    #about .about-content {
+        flex-direction: column;
+    }
+    #about-page {
+        padding: 10px 25px 10px 25px;
+   
+    }
+    #about-page h3, #timeline h3, #home-services h3 {
+        font-size: 1.2rem;
+        line-height: 150%;
+        text-align: center;
     }
 
 }

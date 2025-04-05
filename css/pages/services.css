@@ -3,7 +3,7 @@
     flex-direction: row;
     align-items: center;
     text-align: center;
-    padding: 2rem 0rem;
+    padding: 0rem 0rem;
     background-color: var(--background-color);
     margin-bottom: 2rem;
 }
@@ -21,15 +21,22 @@
     display: flex;
     text-align: justify;
     gap: 10px;
+    flex-direction: column;
 }
 
-.service .picture {
+.service {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
     margin-bottom: 2rem;
-    margin-right: 2rem;
+}
+.picture{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
 }
 
 .service .picture .prix {
@@ -48,19 +55,20 @@
 }
 
 .service img {
-    width: 400px;
-    height: 250px;
+    width: 100%;
+    height: 400px;
     object-fit: cover;
+    object-position: center;
 }
 
 .service h4 {
     font-family: 'BodoniModa', serif;
     margin-bottom: 1rem;
-    font-size: 20px;
-    width: 100%;
-text-align: center;
-    color: var(--primary-color);
+    font-size: 25px;
     font-weight: 500;
+    width: 100%;
+    text-align: center;
+    color: var(--primary-color);
 }
 
 #home-services {
@@ -117,6 +125,13 @@ text-align: center;
     
 }
 
+#services {
+    margin-left: 20px;
+      margin-right: 20px;
+  }
+  .picture{
+    margin: 0px;
+  }
 
 @media (max-width: 1024px) {
     .home-service-content {
@@ -139,6 +154,11 @@ text-align: center;
     .home-service-content {
         flex-wrap: wrap;
     }
+    .service{
+        flex-direction: column;
+    }
+
+
 }
 
 @media (max-width: 425px) {
@@ -146,6 +166,17 @@ text-align: center;
         width: 100%;
     }
 
+    .service img {
+        height: 200px;
+    }
+    .service h4 {
+     
+        font-size: 20px;
+
+    }
+    .service p{
+        font-size: 14px;
+    }
 
     .home-service {
         margin: 0px;
