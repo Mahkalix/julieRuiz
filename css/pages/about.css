@@ -112,17 +112,24 @@
 }
 
 /* Media Queries for About */
-@media (max-width: 1200px) {
+@media (max-width: 1024px) {
     #about .about-content {
         flex-direction: column;
+    }
+    #about {
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+
+    #about p {
+        margin-left: 0px;
+        font-size: 14px;
     }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 768px) {
     #about .about-content {
         flex-direction: column;
     }
-    #about p {
-        margin-left: 0px;
-    }
+
 }

@@ -24,22 +24,29 @@ nav {
 .menu-left, .menu-center, .menu-right {
     display: flex;
     align-items: center;
-    flex: 1;
+    margin-top: 30px;
 }
 
 .menu-left {
     justify-content: flex-start;
-    margin-top: 30px;
+    width: 40%;
+    flex-wrap: wrap;
 }
 
 .menu-center {
     justify-content: center;
-    margin-top: 20px;
+    width: 20%;
+  
+    margin-top: 10px;
+  
 }
 
+.menu-left li a{
+    line-height: 189%;
+}
 .menu-right {
     justify-content: flex-end;
-    margin-top: 30px;
+    width: 40%;
 }
 
 .menu-left li a, .menu-right li a, nav ul li a {
@@ -69,42 +76,6 @@ nav ul li {
     width: 135px;
 }
 
-/* Media Queries for Navigation */
-@media (max-width: 900px) {
-    .menu-center {
-        flex: 0;
-    }
-    .menu-right {
-        width: 20%;
-        flex: 0;
-    }
-    .menu-left {
-        display: none;
-    }
-    .menu-left, .menu-right {
-        display: none;
-    }
-    .menu-center {
-        display: flex;
-        justify-content: center;
-        width: 60%;
-        margin-top: 10px;
-    }
-    .menu-left, .menu-right {
-        width: 20%;
-    }
-    .logo {
-        height: 100px;
-        width: 110px;
-    }
-}
-
-@media (max-width: 600px) {
-    nav ul li {
-        display: block;
-        margin: 0.5rem 0;
-    }
-}
 
 .hamburger {
     display: none;
@@ -115,54 +86,71 @@ nav ul li {
 }
 
 .hamburger div {
-    width: 25px;
+    width: 30px;
     height: 3px;
     background-color: var(--background-color);
     margin: 4px 0;
     transition: 0.4s;
 }
 
-/* Media Queries for Hamburger */
-@media (max-width: 900px) {
+
+@media (max-width: 768px) {
+    .menu-center {
+        flex: 0;
+    }
+
+ 
+    .menu-center {
+        display: flex;
+        justify-content: center;
+        width: 60%;
+        margin-top: 5px;
+    }
+    .logo {
+        height: 120px;
+        width: 110px;
+    }
+
     .hamburger {
         display: flex;
         margin-left: 15px;
         width: 30%;
         flex: 0;
     }
+
+    .menu-left, .menu-right {
+        display: none;
+        width: 20%;
+        margin-top: 0;
+    }
+    
     .menu-left.active {
         display: flex;
         flex-direction: column;
         position: absolute;
         top: 0;
         left: 0;
+        height: 420px;
+        padding-top: 120px;
         width: 100%;
         background-color: var(--primary-color);
         z-index: 5;
     }
-    .menu-left.active li {
-        margin: 1rem 0;
-    }
-    .menu-left.active li a {
-        color: var(--background-color);
-    }
-    .hamburger {
-        display: flex;
-    }
-    .menu-left.active, .menu-right.active {
+    
+    .menu-right.active {
         display: flex;
         flex-direction: column;
         position: absolute;
-        top: 60px;
+        top: 0px;
         left: 0;
         width: 100%;
+        height: 120px;
         background-color: var(--primary-color);
         z-index: 5;
     }
     .menu-left.active li, .menu-right.active li {
         margin: 1rem 0;
     }
-    .menu-left.active li a, .menu-right.active li a {
-        color: var(--background-color);
-    }
+ 
 }
+

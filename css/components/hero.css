@@ -2,9 +2,6 @@ hero {
     position: absolute;
     top: 0;
     width: 100%;
-    background-image: url('/assets/images/background.jpg');
-    background-size: cover;
-    background-position: center;
     color: var(--background-color);
     text-align: center;
     display: flex;
@@ -18,6 +15,9 @@ hero#index-hero {
 
 hero#other-hero {
     height: 50vh;
+    background-image: url('/assets/images/background.jpg');
+    background-size: cover;
+    background-position: center;
 }
 
 hero::before {
@@ -94,9 +94,9 @@ hero::before {
 }
 
 /* Media Queries for Hero */
-@media (max-width: 900px) {
+@media (max-width: 768px) {
     .subtitle {
-        font-size: 2rem;
+        font-size: 1.2rem;
     }
     .subtitle-others-2 {
         font-size: 1.5rem;
@@ -104,17 +104,25 @@ hero::before {
     .subtitle-others {
         font-size: 0.7rem;
     }
+    hero#index-hero {
+        height: 50vh;
+    }
+    
+}
+
+@media (max-width: 425px) {
+    .hero-slide {
+        display: none;
+        position: relative;
+        width: 100%;
+        height: 50%;
+        overflow: hidden;
+    }
+
 }
 
 
 
-.hero-slide {
-    display: none;
-    position: relative;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-}
 
 .hero-slide {
     display: none;

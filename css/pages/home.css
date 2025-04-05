@@ -61,3 +61,13 @@ body {
     height: auto;
     border-radius: 10px;
 }
+
+.main{
+    margin-top: 90vh;
+}
+
+@media (max-width: 768px) {
+    .main{
+        margin-top: 40vh;
+    }
+}

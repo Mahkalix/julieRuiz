@@ -50,6 +50,7 @@
 .service img {
     width: 400px;
     height: 250px;
+    object-fit: cover;
 }
 
 .service h4 {
@@ -75,23 +76,25 @@ text-align: center;
 .home-service-content {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
     margin-bottom: 2rem;
     gap: 20px;
     flex-wrap: nowrap;
-    
-
+    margin-left: 20px;
+    margin-right: 20px; 
 }
 
 .home-service {
     text-align: justify;
     gap: 10px;
 }
+    
 
 .home-service img {
     width: 100%;
     height: 350px;
+    object-fit: cover;
     margin-bottom: 1rem;
 }
 
@@ -113,27 +116,39 @@ text-align: center;
     max-height: 200px;
     
 }
-/* Media Queries for Services */
-@media (max-width: 1200px) {
+
+
+@media (max-width: 1024px) {
     .home-service-content {
         flex-wrap: wrap;
     }
-}
-
-@media (max-width: 900px) {
-    .home-service-content {
-        flex-wrap: wrap;
+    .home-service{
+        margin: 20px;
+    }
+    .home-service img{
+        
+    height: 250px;
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     #home-services {
         width: 100%;
     }
-    .home-service img {
-        width: 200px;
-    }
+
     .home-service-content {
         flex-wrap: wrap;
     }
+}
+
+@media (max-width: 425px) {
+    #home-services {
+        width: 100%;
+    }
+
+
+    .home-service {
+        margin: 0px;
+    }
+
 }

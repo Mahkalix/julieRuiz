@@ -41,14 +41,15 @@ document.addEventListener("DOMContentLoaded", function () {
         slideTimeout = setTimeout(showSlides, 4000); 
     }
 
-    const hamburger = document.querySelector(".hamburger");
-    const menuLeft = document.querySelector(".menu-left");
-    const menuRight = document.querySelector(".menu-right");
+});
 
-    hamburger.addEventListener("click", () => {
-        menuLeft.classList.toggle("active");
-        menuRight.classList.toggle("active");
-    });
+const hamburger = document.querySelector(".hamburger");
+const menuLeft = document.querySelector(".menu-left");
+const menuRight = document.querySelector(".menu-right");
+
+hamburger.addEventListener("click", () => {
+    menuLeft.classList.toggle("active");
+    menuRight.classList.toggle("active");
 });
 
 const form = document.getElementById('contact-form');
