@@ -1,4 +1,3 @@
-
 @import 'base/reset.css';
 @import 'base/variables.css';
 @import 'components/buttons.css';
@@ -14,3 +13,25 @@
 @import 'pages/about.css';
 @import 'pages/home.css';
 @import 'pages/services.css';
+
+#legal {
+    padding: 20px;
+    line-height: 1.6;
+    font-size: 16px;
+    color: #333;
+}
+
+#legal h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #444;
+}
+
+#legal p {
+    margin-bottom: 10px;
+}
+
+#legal strong {
+    font-weight: bold;
+    color: #000;
+}
