@@ -104,7 +104,6 @@
 
 .about-text h3{
     display: flex;
-    justify-content: center;
     color: var(--text-color);
     width: 100%;
     margin-bottom: 2rem;
@@ -214,6 +213,9 @@
     #about p {
         margin-left: 0px;
         font-size: 14px;
+    }
+    .about-text h3{
+        justify-content: center;
     }
     
 }
